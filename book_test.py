@@ -14,11 +14,11 @@ class testBook(unittest.TestCase):
         self.book.change_title('Miecz przeznaczenia')
         self.assertEqual('Miecz przeznaczenia', self.book.title)
     def test_change_author(self):
-        self.book.change_author('Andrzej Sapkowski')
-        self.assertEqual('Andrzej Sapkowski', self.book.author)
+        self.book.change_author('Tolkien')
+        self.assertEqual('Tolkien', self.book.author)
     def test_change_year(self):
-        self.book.change_year(2000)
-        self.assertEqual(2000, self.book.year)
+        self.book.change_year(2008)
+        self.assertEqual(2008, self.book.year)
 
 if __name__ == '__main__':
     unittest.main()
